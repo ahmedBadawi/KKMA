@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>صندوق البحث</title>
+
+    <!--Disable Compatiblety Button-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Meta for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--meta for google-->
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--End-->
+
+	<link href="css/style.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+	
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>')
+	</script>
+    
+	<script src="js/config.min.js"></script>
+     
+    <!--[if IE]><!-->
+    <style>
+    </style>
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  <script>
+  $(document).ready(function(){
+	if($(".sidebarContainer ul").text().length ==0)
+    {
+		$( ".sidebarContainer" ).hide();
+		$( "#flexContainer" ).addClass( "fullWidth" );
+    }
+	});
+  </script>
+</head>
+
+<body>
+
+    <div id="layout">
+               
+        <header>
+        	<div class="container-fluid">
+                <div class="logo col-md-3 col-sm-3 col-xs-12">
+                    <a href="#"><img src="images/logo.png" alt="" /></a>
+                </div><!--EndLogo-->
+                  
+                
+				<div class="col-md-9 col-sm-9 col-xs-12">
+                	<div class="userArea">
+                        <span>مرحباً : <span> محمد أحمد أبو يوسف  </span></span>
+                        <ul>
+                            <li><a href="#"><span>5</span><img src="images/tasks.png" alt="" /></a></li>
+                            <li><a href="#"><span>5</span><img src="images/messages.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/logout.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+				</div>
+                
+            </div>  
+        
+        </header><!--EndHeader-->
+        
+		<nav>
+			<div class="container-fluid">
+				<div class="navbar navbar-default navbar-static-top">
+				
+					<div>
+						<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+							القائمة الرئيسية
+						</button>
+					</div>
+					
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav">
+						  <li>
+							<a href="#">الرئيسية</a>
+						  </li>
+						  <li class="active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">الإدارة <b class="caret"></b></a>
+                            <div class="dropdown-menu">
+                            	<div class="col-md-4 col-sm-4 col-xs-12">
+                                	<h4>عرض طلبات الاجازة والتوقيف</h4>
+                                    <ul>
+                                        <li><a href="#">عرض طلبات الاجازة آنية</a></li>
+                                        <li><a href="#">عرض طلبات الاجازة</a></li>
+                                        <li><a href="#">عرض طلبات تمديد اجازة</a></li>
+                                        <li><a href="#">عرض طلبات تقديم اجازة</a></li>
+                                        <li><a href="#">عرض طلبات توقيف</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                	<h4>تقديم طلبات الاجازة والتوقيف</h4>
+                                    <ul>
+                                        <li><a href="#">طلب الاجازة آنية</a></li>
+                                        <li><a href="#">طلب الاجازة</a></li>
+                                        <li><a href="#">طلب تمديد اجازة</a></li>
+                                        <li><a href="#">طلب تقديم اجازة</a></li>
+                                        <li><a href="#">طلب توقيف</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                	<h4>تسجيل وتوزيع الطلاب</h4>
+                                    <ul>
+                                        <li><a href="#">تسجيل بيانات الطلبة</a></li>
+                                        <li><a href="#">توزيع الطلبة على السرايا</a></li>
+                                        <li><a href="#">توزيع الطلبة على الفصائل</a></li>
+                                        <li><a href="#">اضافة طالب</a></li>
+                                        <li><a href="#">تعديل طالب</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+						  </li>
+						  
+						  <li>
+							<a href="#"> إدارة النظام</a>
+						  </li>
+						  <li>
+							<a href="#">المستوصف</a>
+						  </li>
+                           <li>
+							<a href="#">الرياضة</a>
+						  </li>
+						</ul>
+					</div>
+					  
+				</div>
+                            
+			</div>
+		</nav>
+		
+        <div class="content container-fluid"><!--startContent-->
+        
+			<div class="homeContent"><!--starthomeContent-->
+				<div class="rightBlock"></div><!--EndRightBlock-->
+				<div class="leftBlock"><!--startLeftBlock--></div><!--endLeftBlock-->
+			</div><!--endhomeContent-->
+				
+			<div class="innerContent"><!--startinnerContent-->
+				<div class="breadcrumb col-md-12 hidden-xs"><!--startbreadcrumb-->
+					<ul class="breadcrumbLinks">
+						<li><a href="#"> الصفحة الرئيسية</a></li>
+						<li><a href="#">إدارة النظام </a></li>
+                        <li><a href="#"> بيانات الطالب</a></li>
+                        
+					</ul>
+					
+					<ul class="siteIcons">
+						<li><a href=""><img src="images/print.png" alt=""/></a></li>
+						<li><a href=""><img src="images/atf.png" alt=""/></a></li>
+					</ul>
+				</div><!--endbreadcrumb-->
+				
+                <div id="flexContainer" class="active"> <!--startflexContainer-->
+      
+				    <aside class="sidebarContainer">
+						<div class="detailsProgress">
+							<div class="pTitle">
+								 <h2><img src="images/cVacation.png" alt="" />نسب الإستكمال</h2>
+							</div>
+								 <ul>
+									<li>
+										<div>
+											<span>الكتيبة</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+												  60%
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div>
+											<span>شخصية</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+												  50%
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div>
+											<span>عائلية</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+												  80%
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div>
+											<span>المؤهل</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+												  30%
+												</div>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div>
+											<span>ولى الأمر</span>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+												  40%
+												</div>
+											</div>
+										</div>
+									</li>
+								 </ul>
+							</div>
+                    </aside>
+                          
+                    <div class="flexContent"> <!--startfflexContent-->
+                        
+							<div class="contentHeader">
+								 <h2><img src="images/vacationApp.png" alt="" />بيانات الطالب</h2>
+							</div>
+							<form class="form-container">
+								<fieldset>
+									<legend>بيانات الطالب</legend>
+									<div class="col-md-9">
+										<div class="col-md-6">
+											<label>إسم الطالب</label>
+											<input type="text"   >
+										</div>
+										<div class="col-md-6">
+											<label>لقب العائلة</label>
+											<input type="text"   >
+										</div>
+										<div class="col-md-6">
+											<label>الجنسية</label>
+											<select>
+												<option>سعودى</option>
+												<option>سعودى</option>
+												<option>مصرى</option>
+												<option>مصرى</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label>رقم الهوية الوطنية</label>
+											<input type="text"   >
+										</div>
+										<div class="col-md-6 hasDate">
+											<label>تاريخ انتهاء الهوية</label>
+											<input type="text"   >
+										</div>
+										<div class="col-md-6 hasDate">
+											<label>تاريخ الميلاد</label>
+											<input type="text"   >
+										</div>
+										<div class="col-md-6">
+											<label>دولة الميلاد</label>
+											<select>
+												<option>مصر</option>
+												<option>المملكة العربية السعودية</option>
+												<option>المملكة العربية السعودية</option>
+												<option>المملكة العربية السعودية</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label>مدينة الميلاد</label>
+											<select>
+												<option>الرياض</option>
+												<option>مكة</option>
+												<option>تبوك</option>
+												<option>المدينة المنورة</option>
+											</select>
+										</div>
+										
+									</div>
+									<div class="col-md-3">
+										<div class="col-md-12 personalPhoto">
+											<label>الصورة الشخصية </label>
+											<img src="images/personalPhoto.jpg" alt="" class="pImg"/>
+											<span class="editPhoto">تعديل الصورة</span>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+        
+                    </div><!--endfflexContent-->
+                  
+                </div><!--endflexContainer-->
+				
+					
+			</div><!--end innerContent-->
+                
+        </div><!--endContent-->
+		
+        <footer>
+            	<div class="container-fluid">
+					<p>جميع الحقوق محفوظة
+					<span> 2016 </span> ©كلية الملك خالد العسكرية  </p>                    
+                </div>
+        </footer>
+
+    </div><!--EndLayout-->
+	
+	<script>
+		$(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#flexContainer").toggleClass("active");
+		});
+    </script>
+	<script>
+		$('.advSearch .dropdown-menu').click(function(event){
+			 event.stopPropagation();
+		 })
+    </script>
+	<script>
+		$(document).ready(function () {
+		  var navListItems = $('div.setup-panel div a'),
+				  allWells = $('.setup-content'),
+				  allNextBtn = $('.nextBtn');
+
+		  allWells.hide();
+
+		  navListItems.click(function (e) {
+			  e.preventDefault();
+			  var $target = $($(this).attr('href')),
+					  $item = $(this);
+
+			  if (!$item.hasClass('disabled')) {
+				  navListItems.removeClass('btn-primary').addClass('btn-default');
+				  $item.addClass('btn-primary');
+				  allWells.hide();
+				  $target.show();
+				  $target.find('input:eq(0)').focus();
+			  }
+		  });
+
+		  allNextBtn.click(function(){
+			  var curStep = $(this).closest(".setup-content"),
+				  curStepBtn = curStep.attr("id"),
+				  nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+				  curInputs = curStep.find("input[type='text'],input[type='url']"),
+				  isValid = true;
+
+			  $(".form-group").removeClass("has-error");
+			  for(var i=0; i<curInputs.length; i++){
+				  if (!curInputs[i].validity.valid){
+					  isValid = false;
+					  $(curInputs[i]).closest(".form-group").addClass("has-error");
+				  }
+			  }
+
+			  if (isValid)
+				  nextStepWizard.removeAttr('disabled').trigger('click');
+		  });
+
+		  $('div.setup-panel div a.btn-primary').trigger('click');
+		});
+  </script>
+  <script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$(".autocompleteBox").hide();
+		});
+		$("#show").click(function(){
+			$(".autocompleteBox").show();
+		});
+	});
+	
+	$(document).ready(function(){
+		$("#hideGrid").click(function(){
+			$(".grid").hide();
+		});
+		$("#showGrid").click(function(){
+			$(".grid").show();
+		});
+	});
+	
+	$(document).ready(function(){
+		$("#hideAdv").click(function(){
+			$(".advSearch .dropdown-menu").hide();
+		});
+	});
+	$(document).ready(function(){
+		$("#showAdv").click(function(){
+		$(".advSearch .dropdown-menu").toggle();
+		});
+	});
+	
+  </script>
+</body>
+</html>
+
